@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app>
+
+	<listener>
+		<listenerclass>
+			com.sun.xml.ws.transport.http.servlet.WSContextServletListener
+		</listenerclass>
+	</listener>
+
+	<servlet>
+		<servlet-name>WSServlet</servlet-name>
+		<servlet-class>com.sun.xml.ws.transport.http.servlet.WSServlet
+		</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>WSServlet</servlet-name>
+		<url-pattern>/calService</url-pattern>
+	</servlet-mapping>
+
+</web-app>
